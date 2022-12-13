@@ -16,6 +16,7 @@ export default function Rentals () {
   function fetchData () {
     api.list().then(rentals => {
       setRentals(rentals);
+      console.log(rentals)
     }).catch(err => {
       console.error(err);
       alert('Não foi possível buscar aluguéis!');
